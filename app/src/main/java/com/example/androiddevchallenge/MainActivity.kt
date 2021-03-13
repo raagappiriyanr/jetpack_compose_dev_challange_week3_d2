@@ -53,7 +53,7 @@ class MainActivity : AppCompatActivity() {
 // Start building your app here!
 @Composable
 fun MyApp() {
-    Surface(color = MaterialTheme.colors.surface) {
+    Surface(color = MaterialTheme.colors.background) {
        val navController = rememberNavController()
         NavHost(navController = navController, startDestination = "ComposeScreen1"){
             composable("ComposeScreen1"){ ComposeScreen1(navController)}

@@ -1,6 +1,7 @@
 package com.example.androiddevchallenge
 
 import androidx.compose.foundation.Image
+import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.*
@@ -24,18 +25,17 @@ import androidx.navigation.compose.navigate
 
 @Composable
 fun ComposeScreen2(navController: NavHostController) {
-    Column(modifier = Modifier.fillMaxSize(),
+    Column(modifier = Modifier.fillMaxSize().background(color =  MaterialTheme.colors.surface),
         horizontalAlignment = Alignment.CenterHorizontally){
         Box(modifier = Modifier
             .fillMaxSize()
             .weight(1f)){
             Image(painterResource(id = R.drawable.ic_login_bg), null,
                 modifier = Modifier.fillMaxSize(), contentScale = ContentScale.FillBounds)
-            Text("Welcome Back",
+            Text("Welcome\nback",
                 style = MaterialTheme.typography.h2.copy(color = MaterialTheme.colors.onBackground),
                 modifier = Modifier
                     .height(152.dp)
-                    .padding(horizontal = 40.dp)
                     .align(Alignment.Center),
                 textAlign = TextAlign.Center
             )
