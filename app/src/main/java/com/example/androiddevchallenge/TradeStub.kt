@@ -15,7 +15,7 @@ data class TradeData(
 val trades = listOf<TradeData>(
     TradeData("ALK","Alaska Air Group, Inc.","$7,918","-0.54%",R.drawable.ic_home_alk, false),
     TradeData("BA","Boeing Co.","$1,293","+4.18%",R.drawable.ic_home_ba, true),
-    TradeData("DAL","Delta Airlines Inc.","$893.50","-0.54%",R.drawable.ic_home_dal, true),
+    TradeData("DAL","Delta Airlines Inc.","$893.50","-0.54%",R.drawable.ic_home_dal, false),
     TradeData("EXPE","Expedia Group Inc.","$12,301","+2.51%",R.drawable.ic_home_exp, true),
     TradeData("EADSY","Airbus SE","$12,301","+1.38%",R.drawable.ic_home_eadsy, true),
     TradeData("JBLU","Jetblue Airway Corp.","$8,521","+1.56%",R.drawable.ic_home_jblu, true),
