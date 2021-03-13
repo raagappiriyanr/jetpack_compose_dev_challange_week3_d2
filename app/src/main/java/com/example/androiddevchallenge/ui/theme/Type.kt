@@ -17,9 +17,20 @@ package com.example.androiddevchallenge.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.Font
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.sp
+import com.example.androiddevchallenge.R
+
+
+val montserrateFontFamily = FontFamily(
+    Font(R.font.mont_serrat_extra_bold, FontWeight.ExtraBold),
+    Font(R.font.mont_serrat_bold, FontWeight.Bold),
+    Font(R.font.mont_serrat_semi_bold, FontWeight.SemiBold),
+    Font(R.font.mont_serrat_light, FontWeight.Light),
+    Font(R.font.mont_serrat_medium, FontWeight.Medium)
+)
 
 // Set of Material typography styles to start with
 val typography = Typography(
@@ -29,46 +40,41 @@ val typography = Typography(
 //        fontSize = 16.sp
 //    )
     body1 = TextStyle(
-        fontFamily = FontFamily.Default,
+        fontFamily = montserrateFontFamily,
         fontWeight = FontWeight.Light,
-        fontSize = 14.sp,
+        fontSize = 13.sp,
         letterSpacing = 0.sp
     ),
     h1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Bold,
-        fontSize = 18.sp,
-        letterSpacing = 0.sp
+        fontFamily = montserrateFontFamily,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 40.sp,
+        letterSpacing = 1.25.sp
     ),
     h2 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Bold,
-        fontSize = 14.sp,
-        letterSpacing = .15.sp
-    ),
-    subtitle1 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Light,
-        fontSize = 16.sp,
+        fontFamily = montserrateFontFamily,
+        fontWeight = FontWeight.ExtraBold,
+        fontSize = 36.sp,
         letterSpacing = 0.sp
     ),
-    body2 = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.Light,
-        fontSize = 12.sp,
+    h3 = TextStyle(
+        fontFamily = montserrateFontFamily,
+        fontWeight = FontWeight.SemiBold,
+        fontSize = 13.sp,
+        letterSpacing = 0.sp
+    ),
+    subtitle1 = TextStyle(
+        fontFamily = montserrateFontFamily,
+        fontWeight = FontWeight.Medium,
+        fontSize = 15.sp,
         letterSpacing = 0.sp
     ),
     button = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.SemiBold,
-        fontSize = 14.sp,
-        letterSpacing = 1.sp
-    ),
-    caption = TextStyle(
-        fontFamily = FontFamily.Default,
-        fontWeight = FontWeight.SemiBold,
-        fontSize = 12.sp,
-        letterSpacing = 0.sp
+        fontFamily = montserrateFontFamily,
+        fontWeight = FontWeight.Bold,
+        fontSize = 13.sp,
+        letterSpacing = 1.25.sp,
+
     )
 /* Other default text styles to override
 button = TextStyle(
